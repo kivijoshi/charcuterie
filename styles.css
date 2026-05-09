@@ -80,11 +80,12 @@ a {
 }
 
 .brand-wordmark strong {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.7rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  color: var(--forest-dark);
+  font-family: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  font-size: 1.52rem;
+  font-weight: 600;
+  letter-spacing: 0.038em;
+  color: #5b2f1f;
+  text-shadow: 0 0.5px 0 rgba(91, 47, 31, 0.22);
 }
 
 .nav-links {
@@ -536,7 +537,7 @@ textarea:focus {
   }
 
   .brand-wordmark strong {
-    font-size: 1.25rem;
+    font-size: 1.14rem;
   }
 
   .nav-links {
