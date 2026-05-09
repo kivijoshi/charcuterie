@@ -565,20 +565,52 @@ textarea:focus {
 
   .nav-links a {
     white-space: nowrap;
-    padding: 0.34rem 0.62rem;
+    padding: 0.55rem 0.85rem;
     border-radius: 999px;
     background: rgba(70, 102, 63, 0.08);
   }
 
   .nav-links .btn {
-    padding: 0.34rem 0.72rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  .hero {
+    padding: 2rem 0 1.8rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn,
+  .hero-actions button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 0.85rem 1rem;
   }
 
   .platter-grid {
     grid-template-columns: 1fr;
   }
 
+  .card-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .card-foot .btn {
+    width: 100%;
+    text-align: center;
+  }
+
   .section {
     padding: 2.4rem 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.4rem;
   }
 }
