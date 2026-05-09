@@ -533,17 +533,45 @@ textarea:focus {
 @media (max-width: 620px) {
   .nav-wrap {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.72rem 0;
+  }
+
+  .brand {
+    width: 100%;
+    justify-content: center;
   }
 
   .brand-wordmark strong {
-    font-size: 1.14rem;
+    font-size: 1.02rem;
+    letter-spacing: 0.03em;
   }
 
   .nav-links {
     width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.45rem;
+    padding-bottom: 0.2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    padding: 0.34rem 0.62rem;
+    border-radius: 999px;
+    background: rgba(70, 102, 63, 0.08);
+  }
+
+  .nav-links .btn {
+    padding: 0.34rem 0.72rem;
   }
 
   .platter-grid {
