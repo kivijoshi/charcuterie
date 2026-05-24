@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Try Your Cheese Luck! | The Pune Platter Co.</title>
+  <meta
+    name="description"
+    content="Play the Luck Matrix — a cheese flavor roulette game by The Pune Platter Co. Roll a 3-digit code and let pure luck build your snack!"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="The Pune Platter Co. home">
+        <span class="brand-wordmark">
+          <strong>THE PUNE PLATTER CO.</strong>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#platters">Platters</a>
+        <a href="index.html#custom">Custom Board</a>
+        <a href="index.html#about">Story</a>
+        <a href="games.html">Cheese Games</a>
+        <a href="index.html#order" class="btn btn-sm">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="game-hero lm-hero">
+      <div class="game-hero-bg-left"></div>
+      <div class="game-hero-bg-right"></div>
+      <div class="container game-hero-inner">
+        <p class="eyebrow">Flavor Roulette Edition &bull; The Pune Platter Co.</p>
+        <h1 class="game-title">Try Your<br>Cheese Luck! 🎲</h1>
+        <p class="game-subtitle">
+          Instead of picking ingredients, you let <em>pure luck</em> build your snack.
+          Assign your platter items to numbers 1&ndash;4, call a secret 3&#8209;digit code,
+          and assemble whatever fate hands you — then vote on who holds the highest gourmet fortune!
+        </p>
+        <a href="#scoreboard" class="btn game-cta">Set Up Your Matrix</a>
+      </div>
+    </section>
+
+    <!-- ── How to Play ── -->
+    <section class="section" id="how-to-play">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Rules</p>
+          <h2>How to Play — 3 Simple Steps</h2>
+        </div>
+        <div class="steps-grid reveal">
+
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3 class="step-title">Call Your Lucky Code</h3>
+            <p>
+              On your turn, close your eyes and call out any 3&#8209;digit number where
+              each digit is between <strong>1 and 4</strong>. For example:
+              <strong>4 &ndash; 2 &ndash; 1</strong>.
+            </p>
+            <p class="step-note">Each digit maps to one item in each category of your Flavor Key.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3 class="step-title">Decode Your Snack</h3>
+            <p>
+              Match your digits to the Flavor Key you set up. Code <strong>4&ndash;2&ndash;1</strong> means:
+            </p>
+            <ul class="step-combo-list">
+              <li><span class="combo-tag">Cheese #4</span></li>
+              <li><span class="combo-plus">+</span></li>
+              <li><span class="combo-tag">Spread #2</span></li>
+              <li><span class="combo-plus">+</span></li>
+              <li><span class="combo-tag">Crunch #1</span></li>
+            </ul>
+            <p class="step-note" style="margin-top:0.6rem">Build it on one cracker and replicate for each player.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3 class="step-title">Taste, Rate &amp; Vote</h3>
+            <p>
+              Everyone gets one single-bite sample. Rate the lucky creation from
+              <strong>1</strong> (flavor nightmare) to <strong>5</strong> (absolute fortune).
+              Record scores in the matrix and tally the totals!
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Folded Chits Alternative -->
+        <div class="chits-alt reveal">
+          <div class="chits-alt-inner">
+            <span class="chits-icon" aria-hidden="true">🎲</span>
+            <div>
+              <p class="chits-title">Folded Chits Alternative</p>
+              <p class="chits-body">
+                To make it <strong>fully blind</strong>, write numbers 1&ndash;4 on separate paper chits
+                and place them into <strong>3 bowls</strong> (one bowl per category).
+                Each player draws one chit from each bowl on their turn to seal their flavour fate!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pro Tip ── -->
+    <section class="section pro-tip-section">
+      <div class="container">
+        <div class="pro-tip-card reveal">
+          <span class="pro-tip-icon" aria-hidden="true">💡</span>
+          <div>
+            <p class="pro-tip-label">Pro Taste Tip from The Pune Platter Co.</p>
+            <p>
+              Artisanal gourmet cheese tastes best when it is <strong>not</strong> freezing cold!
+              Let the platter rest outside your refrigerator for <strong>15–20 minutes</strong>
+              before playing. This releases the rich, buttery aromas and makes the textures
+              beautifully soft and satisfying.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Scoreboard ── -->
+    <section class="section" id="scoreboard">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Ballot</p>
+          <h2>The Official Luck Voting Matrix</h2>
+          <p class="scoring-note">Score each lucky creation from <strong>1</strong> (meh) to <strong>5</strong> (masterpiece). The inventor scores a dash on their own entry.</p>
+        </div>
+
+        <!-- Step 1: Player Setup + Flavor Key -->
+        <div class="game-card reveal" id="setupSection">
+          <h3 class="game-card-title">Step 1 — Set Up Players</h3>
+          <div class="setup-row">
+            <label class="setup-count-label">
+              Number of players
+              <div class="count-control">
+                <button type="button" class="count-btn" id="decreaseCount" aria-label="Decrease player count">−</button>
+                <span id="playerCountDisplay" class="count-display">4</span>
+                <button type="button" class="count-btn" id="increaseCount" aria-label="Increase player count">+</button>
+              </div>
+            </label>
+          </div>
+          <div class="player-names-grid" id="playerNameInputs">
+            <!-- Filled by JS -->
+          </div>
+
+          <h3 class="game-card-title" style="margin-top:1.4rem">Step 2 — Fill Your Flavor Decoding Key</h3>
+          <p class="key-instruction">Look at your platter and write down 4 items under each category. Players will call a 3-digit code — each digit maps to a row below.</p>
+
+          <div class="flavor-key-wrap">
+            <div class="matrix-scroll-wrap">
+              <table class="score-table flavor-key-table" aria-label="Flavor Decoding Key">
+                <thead>
+                  <tr>
+                    <th class="key-num-col">#</th>
+                    <th>🧀 Cheeses</th>
+                    <th>🍯 Spreads / Dips</th>
+                    <th>🍎 Fruits / Nuts / Crunches</th>
+                  </tr>
+                </thead>
+                <tbody id="flavorKeyBody">
+                  <!-- Filled by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <button type="button" class="btn" id="startGameBtn" style="margin-top:1.2rem">Start the Luck Matrix! 🎲</button>
+        </div>
+
+        <!-- Step 3: Voting Matrix (hidden until game starts) -->
+        <div id="matrixSection" class="hidden">
+          <div class="matrix-player-strip" id="playerStrip">
+            <!-- Player chips -->
+          </div>
+
+          <div class="matrix-scroll-wrap">
+            <table class="score-table" id="scoreTable" aria-label="Luck Voting Matrix">
+              <thead>
+                <tr id="matrixHeader"></tr>
+              </thead>
+              <tbody id="matrixBody"></tbody>
+            </table>
+          </div>
+
+          <div class="matrix-actions">
+            <button type="button" class="btn btn-outline" id="addEntryBtn">+ Add Entry</button>
+            <button type="button" class="btn" id="calcAwardsBtn">👑 Reveal Awards</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Awards Ceremony ── -->
+    <section class="section accent hidden" id="awardsSection">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The Fates have spoken…</p>
+          <h2>The Luck Awards</h2>
+        </div>
+        <div class="awards-grid lm-awards" id="awardsGrid">
+
+          <div class="award-card award-grand">
+            <div class="award-icon" aria-hidden="true">👑</div>
+            <h3 class="award-title">The Gourmet Fortune Teller</h3>
+            <p class="award-desc">The highest-scored lucky code combination at the table — fate clearly favours this one!</p>
+            <p class="award-winner" id="awardFortuneTeller">—</p>
+          </div>
+
+          <div class="award-card award-chatpata">
+            <div class="award-icon" aria-hidden="true">🌶️</div>
+            <h3 class="award-title">The Lucky Chatpata Alchemist</h3>
+            <p class="award-desc">Best savory combo — whose lucky code rolled the tastiest pesto pairing?</p>
+            <div class="award-pick-wrap">
+              <select class="award-pick-select" id="chatpataPick" aria-label="Select Lucky Chatpata Alchemist">
+                <option value="">Players decide…</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="award-card award-disaster">
+            <div class="award-icon" aria-hidden="true">🤪</div>
+            <h3 class="award-title">The Chaotic Chef</h3>
+            <p class="award-desc">The lowest-scored lucky entry — luck was decidedly not on their side today!</p>
+            <p class="award-winner" id="awardChaoticChef">—</p>
+          </div>
+
+        </div>
+        <div class="awards-reset-row">
+          <button type="button" class="btn btn-outline" id="resetGameBtn">↺ Play Again</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Copyright 2026 The Pune Platter Co.</p>
+      <div class="footer-links">
+        <a href="mailto:orders@punepplatter.co">orders@punepplatter.co</a>
+        <a href="tel:+918237556820">+91 82375 56820</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="luck-matrix.js"></script>
+</body>
+</html>

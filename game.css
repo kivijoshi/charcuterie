@@ -1,0 +1,680 @@
+/* ── Game Page Specific Styles ── */
+
+/* Active nav link */
+.nav-active {
+  color: var(--forest-dark) !important;
+  font-weight: 700;
+  border-bottom: 2px solid var(--forest);
+  padding-bottom: 2px;
+}
+
+/* ── Game Hero ── */
+.game-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0 4rem;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 60% 0%, rgba(191, 131, 51, 0.15), transparent 55%),
+    radial-gradient(ellipse at 10% 80%, rgba(70, 102, 63, 0.14), transparent 50%);
+}
+
+.game-hero-bg-left,
+.game-hero-bg-right {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.game-hero-bg-left {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(70, 102, 63, 0.18), rgba(70, 102, 63, 0));
+  top: -160px;
+  left: -140px;
+}
+
+.game-hero-bg-right {
+  width: 440px;
+  height: 440px;
+  background: radial-gradient(circle, rgba(191, 131, 51, 0.18), rgba(191, 131, 51, 0));
+  bottom: -240px;
+  right: -160px;
+}
+
+.game-hero-inner {
+  position: relative;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.game-title {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.04;
+  color: var(--brown);
+  margin: 0.3rem 0 1.1rem;
+}
+
+.game-subtitle {
+  font-size: 1.08rem;
+  max-width: 56ch;
+  margin: 0 auto 1.8rem;
+  color: var(--ink);
+  opacity: 0.85;
+}
+
+.game-cta {
+  font-size: 1rem;
+}
+
+/* ── Steps Grid ── */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+.step-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(70, 102, 63, 0.18);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.3rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+}
+
+.step-number {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: linear-gradient(135deg, var(--forest), var(--forest-dark));
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.9rem;
+}
+
+.step-title {
+  font-size: 1.32rem;
+  color: var(--forest-dark);
+  margin-bottom: 0.6rem;
+}
+
+.step-combo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.7rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.combo-tag {
+  display: inline-block;
+  background: rgba(70, 102, 63, 0.12);
+  color: var(--forest-dark);
+  border-radius: 8px;
+  padding: 0.3rem 0.7rem;
+  font-weight: 600;
+  font-size: 0.93rem;
+}
+
+.combo-plus {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--amber);
+  padding-left: 0.1rem;
+}
+
+/* ── Pro Tip ── */
+.pro-tip-section {
+  padding: 2rem 0;
+}
+
+.pro-tip-card {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  background: linear-gradient(130deg, rgba(191, 131, 51, 0.08), rgba(247, 241, 229, 0.95));
+  border: 1px solid rgba(191, 131, 51, 0.28);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.4rem;
+  box-shadow: 0 6px 18px rgba(61, 44, 29, 0.08);
+}
+
+.pro-tip-icon {
+  font-size: 1.9rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 0.1rem;
+}
+
+.pro-tip-label {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--amber);
+  margin: 0 0 0.35rem;
+}
+
+/* ── Scoring Note ── */
+.scoring-note {
+  margin-top: 0.5rem;
+  font-size: 0.97rem;
+}
+
+/* ── Game Card (Setup) ── */
+.game-card {
+  background: #fffdf8;
+  border: 1px solid rgba(91, 47, 31, 0.2);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 1.5rem;
+}
+
+.game-card-title {
+  font-size: 1.6rem;
+  color: var(--forest-dark);
+  margin-bottom: 1.1rem;
+}
+
+/* Player count control */
+.setup-row {
+  margin-bottom: 1.2rem;
+}
+
+.setup-count-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.count-control {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid rgba(91, 47, 31, 0.25);
+  border-radius: 999px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.count-btn {
+  border: none;
+  background: transparent;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--forest-dark);
+  transition: background 120ms;
+  line-height: 1;
+}
+
+.count-btn:hover {
+  background: rgba(70, 102, 63, 0.1);
+}
+
+.count-btn:disabled {
+  color: rgba(70, 102, 63, 0.3);
+  cursor: default;
+}
+
+.count-display {
+  min-width: 2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--forest-dark);
+}
+
+.player-names-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.player-name-label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: 0.93rem;
+}
+
+.player-name-input {
+  font: inherit;
+  border: 1px solid rgba(91, 47, 31, 0.3);
+  border-radius: 12px;
+  padding: 0.62rem 0.74rem;
+  background: #fff;
+  width: 100%;
+}
+
+.player-name-input:focus {
+  outline: 2px solid rgba(70, 102, 63, 0.35);
+  border-color: rgba(70, 102, 63, 0.45);
+}
+
+/* ── Player Strip ── */
+.matrix-player-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.player-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(130deg, var(--forest), var(--forest-dark));
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.32rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* ── Score Table ── */
+.matrix-scroll-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 1rem;
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdf8;
+  border: 1px solid rgba(91, 47, 31, 0.15);
+  border-radius: var(--radius);
+  font-size: 0.93rem;
+  min-width: 580px;
+}
+
+.score-table th {
+  background: linear-gradient(160deg, var(--forest-dark), var(--forest));
+  color: #fff;
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.86rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.score-table th:first-child {
+  border-radius: var(--radius) 0 0 0;
+}
+
+.score-table th:last-child {
+  border-radius: 0 var(--radius) 0 0;
+}
+
+.score-table td {
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid rgba(91, 47, 31, 0.1);
+  vertical-align: middle;
+}
+
+.score-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.score-table tbody tr:hover {
+  background: rgba(247, 241, 229, 0.6);
+}
+
+/* Inventor select */
+.inventor-select {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid rgba(91, 47, 31, 0.28);
+  border-radius: 10px;
+  padding: 0.42rem 0.6rem;
+  background: #fff;
+  min-width: 110px;
+  cursor: pointer;
+}
+
+.inventor-select:focus {
+  outline: 2px solid rgba(70, 102, 63, 0.35);
+}
+
+/* Invention name input */
+.invention-name {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid rgba(91, 47, 31, 0.28);
+  border-radius: 10px;
+  padding: 0.42rem 0.65rem;
+  background: #fff;
+  width: 100%;
+  min-width: 150px;
+}
+
+.invention-name:focus {
+  outline: 2px solid rgba(70, 102, 63, 0.35);
+}
+
+/* Score inputs */
+.score-input {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid rgba(91, 47, 31, 0.28);
+  border-radius: 10px;
+  padding: 0.42rem 0.5rem;
+  background: #fff;
+  width: 3.8rem;
+  text-align: center;
+}
+
+.score-input:focus {
+  outline: 2px solid rgba(70, 102, 63, 0.35);
+}
+
+.score-input:disabled {
+  background: rgba(91, 47, 31, 0.07);
+  color: rgba(91, 47, 31, 0.45);
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+/* Total cell */
+.row-total {
+  font-weight: 700;
+  color: var(--forest-dark);
+  white-space: nowrap;
+  min-width: 70px;
+}
+
+.row-total.is-winner {
+  color: var(--amber);
+}
+
+/* Remove row button */
+.remove-row-btn {
+  border: none;
+  background: transparent;
+  color: rgba(91, 47, 31, 0.45);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  line-height: 1;
+  transition: color 120ms, background 120ms;
+}
+
+.remove-row-btn:hover {
+  color: var(--brown);
+  background: rgba(91, 47, 31, 0.08);
+}
+
+/* Matrix actions row */
+.matrix-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+/* ── Awards Section ── */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+.award-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.3rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(91, 47, 31, 0.15);
+}
+
+.award-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 0.65rem;
+}
+
+.award-title {
+  font-size: 1.38rem;
+  color: var(--forest-dark);
+  margin-bottom: 0.4rem;
+}
+
+.award-desc {
+  font-size: 0.9rem;
+  color: var(--ink);
+  opacity: 0.75;
+  margin-bottom: 0.85rem;
+}
+
+.award-winner {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--brown);
+  margin: 0;
+  min-height: 1.5rem;
+}
+
+.award-pick-wrap {
+  margin-top: 0.4rem;
+}
+
+.award-pick-select {
+  font: inherit;
+  font-size: 0.92rem;
+  border: 1px solid rgba(91, 47, 31, 0.3);
+  border-radius: 12px;
+  padding: 0.6rem 0.75rem;
+  background: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.award-pick-select:focus {
+  outline: 2px solid rgba(70, 102, 63, 0.35);
+}
+
+.award-grand    { border-top: 3px solid var(--amber); }
+.award-chatpata { border-top: 3px solid rgba(191, 64, 40, 0.55); }
+.award-shahi    { border-top: 3px solid rgba(191, 131, 51, 0.65); }
+.award-disaster { border-top: 3px solid rgba(70, 102, 63, 0.55); }
+
+.awards-reset-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.8rem;
+}
+
+/* ── Hidden utility ── */
+.hidden {
+  display: none !important;
+}
+
+/* ── Luck Matrix — Hero accent ── */
+.lm-hero {
+  background:
+    radial-gradient(ellipse at 30% 0%, rgba(191, 131, 51, 0.2), transparent 50%),
+    radial-gradient(ellipse at 85% 80%, rgba(70, 102, 63, 0.14), transparent 50%);
+}
+
+/* ── Luck Matrix — Folded Chits Alternative ── */
+.chits-alt {
+  margin-top: 1.6rem;
+}
+
+.chits-alt-inner {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  background: linear-gradient(130deg, rgba(70, 102, 63, 0.08), rgba(247, 241, 229, 0.96));
+  border: 1px solid rgba(70, 102, 63, 0.28);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+}
+
+.chits-icon {
+  font-size: 1.9rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 0.1rem;
+}
+
+.chits-title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--forest-dark);
+  margin: 0 0 0.35rem;
+}
+
+.chits-body {
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+/* ── Luck Matrix — Step note ── */
+.step-note {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--forest);
+  margin: 0.5rem 0 0;
+}
+
+/* ── Luck Matrix — Flavor Key ── */
+.key-instruction {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  max-width: 64ch;
+}
+
+.flavor-key-wrap {
+  margin-bottom: 0.4rem;
+}
+
+.flavor-key-table th {
+  font-size: 0.84rem;
+}
+
+.key-num-col {
+  width: 2.5rem;
+}
+
+.key-num-cell {
+  font-weight: 700;
+  color: var(--forest-dark);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.key-item-input {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid rgba(91, 47, 31, 0.28);
+  border-radius: 10px;
+  padding: 0.42rem 0.65rem;
+  background: #fff;
+  width: 100%;
+  min-width: 130px;
+}
+
+.key-item-input:focus {
+  outline: 2px solid rgba(70, 102, 63, 0.35);
+  border-color: rgba(70, 102, 63, 0.45);
+}
+
+/* ── Luck Matrix — Code cell ── */
+.code-cell {
+  white-space: nowrap;
+}
+
+.code-digit {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid rgba(91, 47, 31, 0.28);
+  border-radius: 10px;
+  padding: 0.38rem 0.35rem;
+  background: #fff;
+  width: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.code-digit:focus {
+  outline: 2px solid rgba(70, 102, 63, 0.35);
+}
+
+.code-dash {
+  font-weight: 700;
+  color: var(--amber);
+  margin: 0 0.18rem;
+}
+
+/* ── Luck Matrix — Decoded snack cell ── */
+.decoded-cell {
+  min-width: 200px;
+}
+
+.decoded-snack {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--forest-dark);
+  opacity: 0.85;
+}
+
+/* ── Luck Matrix — Awards (3-column on wider screens) ── */
+.awards-grid.lm-awards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 860px) {
+  .awards-grid.lm-awards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .steps-grid,
+  .cheats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .game-hero {
+    padding: 3.2rem 0 2.8rem;
+  }
+
+  .matrix-actions {
+    flex-direction: column;
+  }
+
+  .matrix-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

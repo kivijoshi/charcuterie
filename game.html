@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Great Gourmet Snack-Off! | The Pune Platter Co.</title>
+  <meta
+    name="description"
+    content="Play The Great Gourmet Snack-Off! — a cheese tasting and artisanal pairing game by The Pune Platter Co. Score your creations and crown the champion."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="The Pune Platter Co. home">
+        <span class="brand-wordmark">
+          <strong>THE PUNE PLATTER CO.</strong>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#platters">Platters</a>
+        <a href="index.html#custom">Custom Board</a>
+        <a href="index.html#about">Story</a>
+        <a href="games.html">Cheese Games</a>
+        <a href="index.html#order" class="btn btn-sm">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="game-hero">
+      <div class="game-hero-bg-left"></div>
+      <div class="game-hero-bg-right"></div>
+      <div class="container game-hero-inner">
+        <p class="eyebrow">Brought to you by The Pune Platter Co.</p>
+        <h1 class="game-title">The Great Gourmet<br>Snack&#8209;Off!</h1>
+        <p class="game-subtitle">
+          Gourmet artisanal cheese loves company. Match up hand-picked cheeses, fresh crunches,
+          and special spreads, then play MasterChef with your friends and family — and crown your
+          ultimate flavour pairing champion!
+        </p>
+        <a href="#scoreboard" class="btn game-cta">Jump to Scoreboard</a>
+      </div>
+    </section>
+
+    <!-- ── How to Play ── -->
+    <section class="section" id="how-to-play">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Rules</p>
+          <h2>How to Play — 3 Simple Steps</h2>
+        </div>
+        <div class="steps-grid reveal">
+
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3 class="step-title">The Flavour Warm&#8209;Up</h3>
+            <p>
+              Take a tiny nibble of each cheese and dip. Taste them all individually.
+              Soak in the flavours and awaken the chef in you — get a feel for what
+              pairs sweet, what pairs bold, and what surprises you.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3 class="step-title">Invent Your Custom Bite</h3>
+            <p>
+              Take one cracker or crispbread slice and build your <em>master entry</em>.
+              Layer it up with an imaginative combination:
+            </p>
+            <ul class="step-combo-list">
+              <li><span class="combo-tag">1 Cheese</span></li>
+              <li><span class="combo-plus">+</span></li>
+              <li><span class="combo-tag">1 Spread or Dip</span></li>
+              <li><span class="combo-plus">+</span></li>
+              <li><span class="combo-tag">1 Crunch Factor<br><small>(Fruit or Nut)</small></span></li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3 class="step-title">Taste&#8209;Test &amp; Vote</h3>
+            <p>
+              Give your snack entry a creative name. Replicate it so every player gets
+              exactly one single-bite sample. Taste together and score each entry on
+              the ballot below — then tally the totals and crown your champions!
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pro Tip ── -->
+    <section class="section pro-tip-section">
+      <div class="container">
+        <div class="pro-tip-card reveal">
+          <span class="pro-tip-icon" aria-hidden="true">💡</span>
+          <div>
+            <p class="pro-tip-label">Pro Taste Tip from The Pune Platter Co.</p>
+            <p>
+              Artisanal gourmet cheese tastes best when it is <strong>not</strong> freezing cold!
+              Let the platter rest outside your refrigerator for <strong>15–20 minutes</strong>
+              before playing. This releases the rich, buttery aromas and makes the textures
+              beautifully soft and satisfying.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Scoreboard ── -->
+    <section class="section" id="scoreboard">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Ballot</p>
+          <h2>The Official Voting Matrix</h2>
+          <p class="scoring-note">Score each entry from <strong>1</strong> (meh) to <strong>5</strong> (masterpiece). The inventor scores a dash on their own entry.</p>
+        </div>
+
+        <!-- Step 1: Player Setup -->
+        <div class="game-card reveal" id="setupSection">
+          <h3 class="game-card-title">Step 1 — Set Up Players</h3>
+          <div class="setup-row">
+            <label class="setup-count-label">
+              Number of players
+              <div class="count-control">
+                <button type="button" class="count-btn" id="decreaseCount" aria-label="Decrease player count">−</button>
+                <span id="playerCountDisplay" class="count-display">4</span>
+                <button type="button" class="count-btn" id="increaseCount" aria-label="Increase player count">+</button>
+              </div>
+            </label>
+          </div>
+          <div class="player-names-grid" id="playerNameInputs">
+            <!-- Filled by JS -->
+          </div>
+          <button type="button" class="btn" id="startGameBtn">Start the Snack&#8209;Off! 🎉</button>
+        </div>
+
+        <!-- Step 2: Voting Matrix (hidden until game starts) -->
+        <div id="matrixSection" class="hidden">
+          <div class="matrix-player-strip" id="playerStrip">
+            <!-- Player name tags rendered by JS -->
+          </div>
+
+          <div class="matrix-scroll-wrap">
+            <table class="score-table" id="scoreTable" aria-label="Voting Matrix">
+              <thead>
+                <tr id="matrixHeader">
+                  <!-- Built by JS -->
+                </tr>
+              </thead>
+              <tbody id="matrixBody">
+                <!-- Rows added by JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="matrix-actions">
+            <button type="button" class="btn btn-outline" id="addEntryBtn">+ Add Entry</button>
+            <button type="button" class="btn" id="calcAwardsBtn">🏆 Reveal Awards</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Awards Ceremony ── -->
+    <section class="section accent hidden" id="awardsSection">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">And the winners are…</p>
+          <h2>The Awards Ceremony</h2>
+        </div>
+        <div class="awards-grid" id="awardsGrid">
+
+          <div class="award-card award-grand">
+            <div class="award-icon" aria-hidden="true">🏆</div>
+            <h3 class="award-title">Grand MasterChef</h3>
+            <p class="award-desc">The absolute highest score on the board — the supreme monarch of cheese pairings!</p>
+            <p class="award-winner" id="awardGrandMasterChef">—</p>
+          </div>
+
+          <div class="award-card award-chatpata">
+            <div class="award-icon" aria-hidden="true">🌶️</div>
+            <h3 class="award-title">The Chatpata Champion</h3>
+            <p class="award-desc">Best savory, herby, or tangy combination using the pestos.</p>
+            <div class="award-pick-wrap">
+              <select class="award-pick-select" id="chatpataPick" aria-label="Select Chatpata Champion">
+                <option value="">Players choose…</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="award-card award-shahi">
+            <div class="award-icon" aria-hidden="true">🍯</div>
+            <h3 class="award-title">The Shahi Sweet Tooth</h3>
+            <p class="award-desc">Most delicious dessert-like pairing using honey or fig spread.</p>
+            <div class="award-pick-wrap">
+              <select class="award-pick-select" id="shahiPick" aria-label="Select Shahi Sweet Tooth">
+                <option value="">Players choose…</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="award-card award-disaster">
+            <div class="award-icon" aria-hidden="true">🤪</div>
+            <h3 class="award-title">The Kitchen Disaster</h3>
+            <p class="award-desc">A hilarious consolation crown for the experimental blend that tasted completely chaotic!</p>
+            <p class="award-winner" id="awardKitchenDisaster">—</p>
+          </div>
+
+        </div>
+        <div class="awards-reset-row">
+          <button type="button" class="btn btn-outline" id="resetGameBtn">↺ Play Again</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Copyright 2026 The Pune Platter Co.</p>
+      <div class="footer-links">
+        <a href="mailto:orders@punepplatter.co">orders@punepplatter.co</a>
+        <a href="tel:+918237556820">+91 82375 56820</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
