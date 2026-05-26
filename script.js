@@ -5,7 +5,7 @@ document.querySelectorAll(".inquire-general").forEach((btn) => {
   btn.addEventListener("click", () => {
     const message = "Hi! I would like to inquire about your charcuterie platters from The Pune Platter Co.";
 
-    const waPhone = "918237556820";
+    const waPhone = "917058340110";
     window.open(
       `https://wa.me/${waPhone}?text=${encodeURIComponent(message)}`,
       "_blank",
@@ -21,7 +21,7 @@ document.querySelectorAll(".whatsapp-direct").forEach((btn) => {
     
     const message = `Hi! I'm interested in the ${edition} from The Pune Platter Co.`;
 
-    const waPhone = "918237556820";
+    const waPhone = "917058340110";
     window.open(
       `https://wa.me/${waPhone}?text=${encodeURIComponent(message)}`,
       "_blank",
@@ -73,7 +73,7 @@ if (orderForm) {
     const message = lines.join("\n");
 
     // Replace with your actual WhatsApp business number (digits only, with country code)
-    const waPhone = "918237556820";
+    const waPhone = "917058340110";
     window.open(
       `https://wa.me/${waPhone}?text=${encodeURIComponent(message)}`,
       "_blank",
